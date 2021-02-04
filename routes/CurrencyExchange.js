@@ -1,7 +1,8 @@
 var express=require("express");
-const { CurrencyExchangeForParticularDate } = require("../controllers/CurrencyExchanges");
+
+const { CurrencyExchangeAvgForDateRange } = require("../controllers/CurrencyExchanges");
 
 var router=express.Router();
 
-router.get("/dateCurrency",CurrencyExchangeForParticularDate);
+router.get("/dateCurrency",CurrencyExchangeAvgForDateRange);
 module.exports=router;
